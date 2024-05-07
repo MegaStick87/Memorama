@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- Define que el documento es HTML5 -->
+
+<!--
+    Programado por MegaStick. (Fabricio Isaac Gutiérrez Moreno)
+
+ _____ ______   _______   ________  ________  ________  _________  ___  ________  ___  __       
+|\   _ \  _   \|\  ___ \ |\   ____\|\   __  \|\   ____\|\___   ___\\  \|\   ____\|\  \|\  \     
+\ \  \\\__\ \  \ \   __/|\ \  \___|\ \  \|\  \ \  \___|\|___ \  \_\ \  \ \  \___|\ \  \/  /|_   
+ \ \  \\|__| \  \ \  \_|/_\ \  \  __\ \   __  \ \_____  \   \ \  \ \ \  \ \  \    \ \   ___  \  
+  \ \  \    \ \  \ \  \_|\ \ \  \|\  \ \  \ \  \|____|\  \   \ \  \ \ \  \ \  \____\ \  \\ \  \ 
+   \ \__\    \ \__\ \_______\ \_______\ \__\ \__\____\_\  \   \ \__\ \ \__\ \_______\ \__\\ \__\
+    \|__|     \|__|\|_______|\|_______|\|__|\|__|\_________\   \|__|  \|__|\|_______|\|__| \|__|
+                                                \|_________|                                    
+
+
+                                             ARCHIVO HTML.
+-->
+
+<html lang="es">
+<!-- El documento está en español -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Codificación de caracteres UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Asegura la visualización adecuada y una escala inicial en dispositivos móviles -->
+    <title>Memorama - Spider-Man</title>
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Vincula el archivo de estilos CSS externo -->
+    <link rel="icon" href="imagenes/icon.png">
+    <!-- Establece un ícono para la pestaña del navegador -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Preconecta con Google Fonts para mejorar la carga de las fuentes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Permite recursos de origen cruzado para Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <!-- Importa y aplica una fuente personalizada de Google Fonts -->
+</head>
+<body>
+    <h1>Memorama</h1>
+    <!-- Título principal visible en la página -->
+    <button id="startButton" onclick="iniciarJuego()">Iniciar Juego</button>
+    <!-- Botón para iniciar el juego, con un controlador de eventos 'onclick' que llama a la función 'iniciarJuego' -->
+    <div id="pantalla">
+        <div id="ganaste">
+            GANASTE !!!
+        </div>
+        <!-- Sección que se muestra cuando el jugador gana el juego, inicialmente oculta -->
+        <div id="stats">
+            <p class="stats-text">Encontrados: <span id="encontrados">0</span></p>
+            <!-- Muestra el número de pares encontrados -->
+            <p class="stats-text">Faltantes: <span id="faltantes">6</span></p>
+            <!-- Muestra el número de pares faltantes para ganar -->
+            <p class="stats-text">Tiempo: <span id="temporizador">0</span></p>
+            <!-- Muestra el tiempo transcurrido desde el inicio del juego -->
+            <p class="stats-text">Intentos: <span id="intentos">0</span></p>
+            <!-- Muestra el número de intentos realizados -->
+        </div>
+    </div>
+    <script src="/script/script.js"></script>
+    <!-- Vincula el archivo JavaScript que contiene la lógica del juego -->
+</body>
+<!-- Esta etiqueta cierra el <body>, que es donde termina el contenido visible de la página. -->
+</html>
+<!-- Esta etiqueta cierra el documento HTML. -->
